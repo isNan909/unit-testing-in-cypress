@@ -5,7 +5,7 @@ export default function Autocomplete({ countries: data }) {
 	const [suggestions, setSuggestions] = useState([]);
 	const [suggestionIndex, setSuggestionIndex] = useState(0);
 	const [suggestionsActive, setSuggestionsActive] = useState(false);
-	const [value, setValue] = useState("");
+	const [value, setValue] = useState(""); 
 
 	const handleChange = (e) => {
 		const query = e.target.value.toLowerCase();
@@ -72,7 +72,7 @@ export default function Autocomplete({ countries: data }) {
 	return (
 		<>
 			<div className="autocomplete-field">
-				<h3><strong data-cy="heading">Search your country</strong></h3>
+				<h3><strong data-cy="heading">Search your country:</strong></h3>
 				<input
 					type="text"
 					value={value}
